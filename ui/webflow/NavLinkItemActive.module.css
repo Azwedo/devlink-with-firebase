@@ -1,0 +1,30 @@
+.nav-item-active {
+  display: inline-block;
+  padding: 8px 17px;
+
+  border-radius: 5px;
+
+  background-color: #141727;
+
+  transition: all 500ms ease;
+
+  font-family: Manrope;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.nav-item-active:hover {
+  color: hsla(233.64705882352942, 0.00%, 100.00%, 1.00);
+}
+
+.nav-item-active:global(.w--current) {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  background-color: #141727;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+}

@@ -1,3 +1,3 @@
-interface Beni {
-    ok: Ok
+interface User {
+    name: string
 }

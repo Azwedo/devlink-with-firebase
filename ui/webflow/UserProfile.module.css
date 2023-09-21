@@ -1,0 +1,20 @@
+.user {
+  display: flex;
+  align-items: center;
+  transition: opacity 500ms ease;
+  text-decoration: none;
+}
+
+.user:hover {
+  opacity: 0.9;
+}
+
+.username {
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  text-decoration: none;
+}
+
+.avatar {
+  margin-left: 10px;
+  border-radius: 99px;
+}
