@@ -15,7 +15,7 @@
     "incremental": true,
     "typeRoots": [
       "./ts", 
-      "./node_modules/@types"
+      "./node_modules/@types",
     ],
     "plugins": [
       {
