@@ -5,3 +5,8 @@ Designed for the Webflow and Developers community, this boilerplate project prov
 - **Firebase Authentication**
 - **Firestore Management**
 - **Storage Upload**
+
+Techstack:
+- **Next.js & React**
+- **Webflow DevLink & Tailwind**
+- **Zustand & Typescript**

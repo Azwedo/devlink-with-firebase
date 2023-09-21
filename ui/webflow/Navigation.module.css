@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-right: 1em;
+  padding-left: 1em;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #dddddf;
+
+  background-color: white;
+}
+
+.header-left-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header-right-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
