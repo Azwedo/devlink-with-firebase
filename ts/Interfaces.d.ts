@@ -1,0 +1,3 @@
+interface Beni {
+    ok: Ok
+}
