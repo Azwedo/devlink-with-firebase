@@ -1,0 +1,15 @@
+:root {
+    --body: #F4F4F6;
+    --background: #fff;
+}
+  
+/* @media (prefers-color-scheme: dark) {
+    :root {
+      --body: #1F1F1F;
+      --background: #2F2F2F;
+    }
+} */
+
+body {
+  background: var(--body);
+}

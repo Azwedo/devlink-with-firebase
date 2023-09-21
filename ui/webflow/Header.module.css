@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-right: 1em;
+  padding-left: 1em;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #dddddf;
+
+  background-color: white;
+}
+
+.header-left-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  height: 100%;
+  margin-right: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 24px;
+}
+
+.navigation-items {
+  display: flex;
+  height: 100%;
+  grid-column-gap: 22px;
+  grid-row-gap: 22px;
+}
+
+.navigation-item {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-item.active {
+  display: flex;
+  align-items: center;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: hsla(0, 46.42%, 51.47%, 1.00) hsla(0, 46.42%, 51.47%, 1.00) #632be1;
+}
+
+.navigation-item.border-bottom-inactive {
+  border-bottom: 2px solid #632be1;
+}
+
+.navigation-item.border-bottom-active {
+  border-bottom: 2px solid #632be1;
+}
+
+.navigation-text {
+  color: hsla(0, 0.00%, 20.00%, 1.00);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header-right-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  margin-left: 8px;
+
+  border-radius: 999px;
+
+  background-color: #c0c2cb;
+}
