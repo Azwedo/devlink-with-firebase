@@ -4,4 +4,7 @@ module.exports = {
     siteId: process.env.NEXT_PUBLIC_WF_SITE_ID,
     authToken: process.env.NEXT_PUBLIC_WF_AUTH_TOKEN,
     cssModules: true,
+    fileExtensions: {
+        js: "jsx"
+    }
 };

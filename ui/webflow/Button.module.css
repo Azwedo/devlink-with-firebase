@@ -1,0 +1,25 @@
+.header-btn {
+  padding: 8px 16px;
+
+  border: 1px solid #7556ed;
+  border-radius: 5px;
+
+  background-color: #7556ed;
+
+  transition: all 500ms ease;
+
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.header-btn:hover {
+  border-color: #02162d;
+  background-color: hsla(252.31788079470195, 87.83%, 72.61%, 1.00);
+  color: hsla(212.09302325581396, 0.00%, 100.00%, 1.00);
+}
+
+@media screen and (max-width: 991px) {
+  .header-btn {
+    display: none;
+  }
+}
