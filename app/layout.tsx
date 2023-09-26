@@ -4,18 +4,19 @@ import "@/ui/webflow/global.css";
 import '@/ui/styles/tailwind.css'
 import '@/ui/styles/devlink-with-firebase.css'
 
-import { DevLinkProvider } from '@/ui/webflow'
-import { LinkRenderer, Navigation } from "@/ui/components";
-import { useAccountState } from "@/data";
 import { useEffect, type FC } from 'react'
-import { AuthMiddleware } from "@/controllers";
+import { DevLinkProvider } from '@/ui/webflow'
+import { LinkRenderer } from "@/ui/components";
+import { Navigation } from "@/ui/views";
+import { useAccountState } from "@/data";
+import { Authenticator } from "@/controllers";
 
 const Layout: FC<ChildrenProp> = (props) => {
   const { children } = props
   const { StateSetAccount, StateRemoveAccount } = useAccountState() as AccountStateType
 
   useEffect(() => {
-    AuthMiddleware(
+    Authenticator(
       StateSetAccount, 
       StateRemoveAccount
     )

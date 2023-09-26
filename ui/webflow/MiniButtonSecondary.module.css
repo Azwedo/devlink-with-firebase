@@ -1,0 +1,16 @@
+.mini-button {
+  padding: 5px 6px;
+
+  border: 1px solid #7556ed;
+  border-radius: 5px;
+
+  background-color: transparent;
+
+  color: hsla(230.52631578947367, 11.33%, 90.98%, 1.00);
+  font-size: 13px;
+}
+
+.mini-button:hover {
+  border-color: hsla(252.31788079470195, 54.09%, 66.60%, 1.00);
+  color: hsla(230.52631578947367, 0.00%, 100.00%, 1.00);
+}
