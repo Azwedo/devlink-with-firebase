@@ -2,7 +2,9 @@ import { FC, ReactElement } from "react"
 
 const Footer: FC = (): ReactElement => {
   return (
-    <div>Footer</div>
+    <div>
+      here the footer
+    </div>
   )
 }
 

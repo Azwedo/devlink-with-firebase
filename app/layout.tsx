@@ -4,23 +4,22 @@ import "@/ui/webflow/global.css";
 import '@/ui/styles/tailwind.css'
 import '@/ui/styles/devlink-with-firebase.css'
 
-import { useEffect, type FC } from 'react'
+import { type FC } from 'react'
 import { DevLinkProvider } from '@/ui/webflow'
 import { LinkRenderer } from "@/ui/components";
 import { Navigation } from "@/ui/views";
-import { useAccountState } from "@/data";
 import { Authenticator } from "@/controllers";
+import { FirebaseAuth } from "@/lib";
+import { useAccountState } from "@/data";
 
 const Layout: FC<ChildrenProp> = (props) => {
+  const StateAccount = useAccountState() as AccountStateType
   const { children } = props
-  const { StateSetAccount, StateRemoveAccount } = useAccountState() as AccountStateType
 
-  useEffect(() => {
-    Authenticator(
-      StateSetAccount, 
-      StateRemoveAccount
-    )
-  }, [])
+  FirebaseAuth.onAuthStateChanged((user) => Authenticator(
+    user,
+    StateAccount
+  ));
 
   return (
     <html>
