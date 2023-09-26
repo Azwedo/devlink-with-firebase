@@ -7,6 +7,8 @@ export * from "./utils";
 export * from "./devlink";
 export * from "./BigHeader";
 export * from "./Button";
+export * from "./CompanyLogo";
+export * from "./Footer";
 export * from "./MiniButtonSecondary";
 export * from "./NavItemLink";
 export * from "./NavLinkItemActive";

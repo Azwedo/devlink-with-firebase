@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "sync": "webflow devlink sync",
     "start": "next start",
     "lint": "next lint"
   },
