@@ -4,6 +4,5 @@
 /out
 /build
 .DS_Store
-.env.local
 .vercel
-.env.*
+.env
