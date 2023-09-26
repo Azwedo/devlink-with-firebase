@@ -7,14 +7,16 @@ export function UserProfile({
   as: _Component = _Builtin.Link,
   text = "Benjamin",
   url = "",
+
+  href = {
+    href: "#",
+  },
 }) {
   return (
     <_Component
       className={_utils.cx(_styles, "user")}
       button={false}
-      options={{
-        href: "#",
-      }}
+      options={href}
     >
       <_Builtin.Block className={_utils.cx(_styles, "username")} tag="div">
         {text}

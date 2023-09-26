@@ -1,21 +1,25 @@
 import { FirebaseAuth } from "@/lib";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
-export const AuthWithGoogle = async () => {
+export const AuthWithGoogle = async (StateSetAccount: Function) => {
     const FirebaseProvider = new GoogleAuthProvider();
 
     const result = await signInWithPopup(FirebaseAuth, FirebaseProvider);
     const user = result.user;
 
-    console.log(user)
+    const state = {
+        name: user.displayName,
+        email: user.email,
+        avatar: user.photoURL,
+    } as User
+
+    StateSetAccount(state)
 }
 
 export const CheckAuth = async () => {
     FirebaseAuth.onAuthStateChanged((user) => {
-        if (user) console.log('User is signed in:', user);
-        else {
-            console.log('No user is signed in.');
-        }
+        if (user) return user
+        else return null
     });
 }
 

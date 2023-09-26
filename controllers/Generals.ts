@@ -1,3 +1,10 @@
-export const AuthMiddleware = (set: any, remove: any) => {
-    console.log(set, remove)
+import { CheckAuth } from "."
+
+export const Authenticator = async (StateSetAccount: any, StateRemoveAccount: any) => {
+    const user = await CheckAuth()
+
+    console.log(user)
+
+    if(user !== null) StateSetAccount()
+    else StateRemoveAccount()
 }

@@ -3,6 +3,7 @@ import * as _Builtin from "./_Builtin";
 import * as _interactions from "./interactions";
 import { NavItemLink } from "./NavItemLink";
 import { NavLinkItemActive } from "./NavLinkItemActive";
+import { MiniButtonSecondary } from "./MiniButtonSecondary";
 import { UserProfile } from "./UserProfile";
 import { Button } from "./Button";
 import * as _utils from "./utils";
@@ -67,8 +68,8 @@ export function BigHeader({
           <_Builtin.Block className={_utils.cx(_styles, "menu-list")} tag="div">
             {links ?? (
               <>
-                <NavItemLink />
-                <NavLinkItemActive text="Link" />
+                <NavItemLink text={text} link={link} />
+                <NavLinkItemActive text={text} link={link} />
               </>
             )}
           </_Builtin.Block>
@@ -78,6 +79,7 @@ export function BigHeader({
           >
             {user ?? (
               <>
+                <MiniButtonSecondary />
                 <UserProfile />
                 <Button />
               </>
