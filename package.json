@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "webflow devlink sync && next dev",
+    "build": "webflow devlink sync && next build",
     "sync": "webflow devlink sync",
     "start": "next start",
     "lint": "next lint"

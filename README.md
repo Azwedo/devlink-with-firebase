@@ -60,6 +60,9 @@ Here is the list on how to setup the project and variables:
 3. Navigate to 'Site Settings' and then to 'Apps & Integrations'. In the 'API access' section, generate an API token. Save this token to your .env file.
 3. Return to the dashboard and select 'Components'. There, you'll find a "Export components" button. Click on it to reveal a .json file. Extract the siteId variable from this file and add it to your environment variables.
 4. If you haven't installed it yet, run npm i `@webflow/webflow-cli -g` to get the Webflow CLI.
+
+### Webflow DevLink Synchronization
+Ensure that you only export components that have been published in Webflow. To do this, click outside the updated components and make sure to publish them. Note that publishing the components does not immediately update the codebase. To synchronize them, execute `npm run sync`.
 <br><br/>
 
 # End 😊
