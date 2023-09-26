@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { ReactElement } from "react";
-import { RenderLink } from "../webflow";
+import { RenderLink } from "../../webflow";
 
 const LinkRenderer: RenderLink = (params): ReactElement => {
     const {

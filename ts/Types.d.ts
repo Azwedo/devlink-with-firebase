@@ -8,8 +8,7 @@ type HeaderNavigationType = {
 }
 
 type AccountStateType = {
-    User: any
-    Auth: boolean
+    User: User
     Loading: boolean
     StateSetAccount: (payload: any) => void
     StateRemoveAccount: () => void

@@ -4,7 +4,7 @@ import { PageHeaderInfo } from "@/ui/webflow";
 const About: FC = (): ReactElement => {
   return (
     <Fragment>
-      <PageHeaderInfo title="About" />
+      <PageHeaderInfo title="Billing" />
     </Fragment>
   )
 }
