@@ -2181,6 +2181,10 @@ textarea.w-select {
   display: grid;
 }
 
+:root {
+  --buttonColor-28ed86d8: #7556ed;
+}
+
 .w-layout-blockcontainer {
   display: block;
   margin-left: auto;
