@@ -1,5 +1,6 @@
 .user {
   display: flex;
+  margin-left: 20px;
   align-items: center;
   transition: opacity 500ms ease;
   text-decoration: none;

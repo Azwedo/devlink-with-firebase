@@ -5,8 +5,7 @@ export const useAccountState = create(
     (set) =>
     (
         {
-            User: null,
-            Auth: false,
+            User: false,
             Loading: true,
             StateSetAccount: (payload: any) => set((state: any) => StateSetAccount(state, payload)),
             StateRemoveAccount: () => set((state: any) => StateRemoveAccount(state)),
