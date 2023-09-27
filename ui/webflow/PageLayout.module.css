@@ -3,6 +3,12 @@
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .page-content {
+    padding: 15px;
+  }
+}
+
 .page-container {
   height: 100%;
 }

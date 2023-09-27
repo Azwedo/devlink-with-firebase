@@ -1,33 +1,32 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
-import { MiniButtonSecondary } from "./MiniButtonSecondary";
-import { UserProfile } from "./UserProfile";
-import { Button } from "./Button";
 import * as _utils from "./utils";
 import _styles from "./Header.module.css";
 
-export function Header({ as: _Component = _Builtin.NavbarWrapper, links }) {
+export function Header({
+  as: _Component = _Builtin.NavbarWrapper,
+  items,
+  user,
+}) {
   return (
     <_Component
-      className={_utils.cx(_styles, "header-section")}
+      className={_utils.cx(_styles, "navbar")}
       tag="div"
       config={{
         animation: "default",
         collapse: "medium",
-        docHeight: true,
-        duration: 500,
+        docHeight: false,
+        duration: 400,
         easing: "ease",
         easing2: "ease",
-        noScroll: true,
+        noScroll: false,
       }}
     >
-      <_Builtin.BlockContainer
-        grid={{
-          type: "container",
-        }}
-        tag="div"
-      >
-        <_Builtin.Block className={_utils.cx(_styles, "header-flex")} tag="div">
+      <_Builtin.NavbarContainer tag="div">
+        <_Builtin.Block
+          className={_utils.cx(_styles, "menu-wrapper")}
+          tag="div"
+        >
           <_Builtin.Link
             className={_utils.cx(_styles, "logo")}
             button={false}
@@ -45,58 +44,107 @@ export function Header({ as: _Component = _Builtin.NavbarWrapper, links }) {
             />
           </_Builtin.Link>
           <_Builtin.NavbarMenu
-            className={_utils.cx(_styles, "nav-menu")}
+            className={_utils.cx(_styles, "nav")}
             tag="nav"
             role="navigation"
           >
             <_Builtin.Block
-              className={_utils.cx(_styles, "nav-links-holder")}
+              className={_utils.cx(_styles, "nav-blocks")}
               tag="div"
             >
-              {links ?? (
-                <>
-                  <_Builtin.Link
-                    className={_utils.cx(_styles, "nav-item")}
-                    button={false}
-                    options={{
-                      href: "#",
-                    }}
-                  >
-                    {"Pagename"}
-                  </_Builtin.Link>
-                  <_Builtin.Link
-                    className={_utils.cx(_styles, "nav-item-active")}
-                    button={false}
-                    options={{
-                      href: "#",
-                    }}
-                  >
-                    {"Home"}
-                  </_Builtin.Link>
-                </>
-              )}
+              <_Builtin.Block
+                className={_utils.cx(_styles, "nav-items")}
+                tag="div"
+              >
+                {items ?? (
+                  <>
+                    <_Builtin.Link
+                      className={_utils.cx(_styles, "nav-item-2")}
+                      button={false}
+                      options={{
+                        href: "#",
+                      }}
+                    >
+                      {"Pagename"}
+                    </_Builtin.Link>
+                    <_Builtin.Link
+                      className={_utils.cx(_styles, "nav-item-active-2")}
+                      button={false}
+                      options={{
+                        href: "#",
+                      }}
+                    >
+                      {"Home"}
+                    </_Builtin.Link>
+                  </>
+                )}
+              </_Builtin.Block>
+              <_Builtin.Block
+                className={_utils.cx(_styles, "auth-handler")}
+                tag="div"
+              >
+                {user ?? (
+                  <>
+                    <_Builtin.Link
+                      className={_utils.cx(_styles, "mini-button-2")}
+                      button={true}
+                      options={{
+                        href: "#",
+                      }}
+                    >
+                      {"Logout"}
+                    </_Builtin.Link>
+                    <_Builtin.Link
+                      className={_utils.cx(_styles, "user-2")}
+                      button={false}
+                      options={{
+                        href: "#",
+                      }}
+                    >
+                      <_Builtin.Block
+                        className={_utils.cx(_styles, "username")}
+                        tag="div"
+                      >
+                        {"Benjamin"}
+                      </_Builtin.Block>
+                      <_Builtin.Image
+                        className={_utils.cx(_styles, "avatar")}
+                        loading="lazy"
+                        width="38"
+                        height="38"
+                        alt="__wf_reserved_inherit"
+                        src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.fd6bdcfeb6.svg"
+                      />
+                    </_Builtin.Link>
+                    <_Builtin.Link
+                      className={_utils.cx(_styles, "header-btn-2")}
+                      button={true}
+                      options={{
+                        href: "#",
+                        preload: "none",
+                      }}
+                    >
+                      {"Login with Google"}
+                    </_Builtin.Link>
+                  </>
+                )}
+              </_Builtin.Block>
             </_Builtin.Block>
           </_Builtin.NavbarMenu>
-          <_Builtin.Block
-            className={_utils.cx(_styles, "right-list")}
+          <_Builtin.NavbarButton
+            className={_utils.cx(_styles, "menu-button-2")}
             tag="div"
           >
-            <MiniButtonSecondary />
-            <UserProfile />
-            <Button />
-          </_Builtin.Block>
-          <_Builtin.Block className={_utils.cx(_styles, "menu-bar")} tag="div">
-            <_Builtin.Image
-              className={_utils.cx(_styles, "menu-bar-icon")}
-              loading="lazy"
-              width="512"
-              height="512"
-              alt="__wf_reserved_inherit"
-              src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/650c3e7003d77814d1cf11bc_menu-bar.png"
+            <_Builtin.Icon
+              className={_utils.cx(_styles, "icon")}
+              widget={{
+                type: "icon",
+                icon: "nav-menu",
+              }}
             />
-          </_Builtin.Block>
+          </_Builtin.NavbarButton>
         </_Builtin.Block>
-      </_Builtin.BlockContainer>
+      </_Builtin.NavbarContainer>
     </_Component>
   );
 }
