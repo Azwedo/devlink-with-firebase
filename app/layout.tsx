@@ -9,6 +9,7 @@ import { DevLinkProvider } from '@/ui/webflow'
 import { LinkRenderer } from "@/ui/components";
 import { Navigation } from "@/ui/views";
 import { Authenticator } from "@/controllers";
+import FooterWebflow from "@/ui/views/Footer";
 import { FirebaseAuth } from "@/lib";
 import { useAccountState } from "@/data";
 
@@ -26,8 +27,8 @@ const Layout: FC<ChildrenProp> = (props) => {
       <body>
         <DevLinkProvider renderLink={LinkRenderer}>
           <Navigation />
-         
           {children}
+          <FooterWebflow />
         </DevLinkProvider>
       </body>
     </html>

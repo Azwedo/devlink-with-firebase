@@ -1,0 +1,15 @@
+.title-small {
+  margin-bottom: 12px;
+
+  color: hsla(230.52631578947367, 0.00%, 100.00%, 1.00);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 991px) {
+  .title-small {
+    text-transform: capitalize;
+  }
+}

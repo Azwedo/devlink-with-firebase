@@ -30,3 +30,12 @@ export declare namespace Embed {
 export declare namespace Visibility {
   type VisibilityConditions = boolean;
 }
+
+export declare namespace Item {
+  type ListItem = {
+    name: string;
+    href: string;
+  };
+}
+
+
