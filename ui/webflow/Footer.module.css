@@ -6,6 +6,12 @@
   font-family: Manrope;
 }
 
+@media screen and (max-width: 991px) {
+  .footer-dark {
+    background-color: #222837;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer-dark {
     padding-right: 15px;

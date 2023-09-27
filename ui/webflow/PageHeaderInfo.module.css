@@ -11,6 +11,13 @@
   background-color: white;
 }
 
+@media screen and (max-width: 767px) {
+  .page-header-container {
+    padding-right: 15px;
+    padding-left: 16px;
+  }
+}
+
 .container-1261 {
   width: 100%;
 }

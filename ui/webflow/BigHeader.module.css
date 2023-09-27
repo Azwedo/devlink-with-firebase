@@ -46,7 +46,7 @@
 }
 
 .logo-image {
-  width: 180px;
+  width: 190px;
   height: auto;
 }
 
@@ -59,6 +59,12 @@
 .right-list {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .right-list {
+    display: none;
+  }
 }
 
 .menu-bar {
