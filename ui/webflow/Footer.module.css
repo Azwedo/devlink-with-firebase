@@ -13,25 +13,10 @@
   }
 }
 
-.container {
-  width: 100%;
-}
-
-@media screen and (max-width: 991px) {
-  .container {
-    max-width: 728px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .container {
-    max-width: none;
-  }
-}
-
 .footer-wrapper {
   display: flex;
-  padding: 4em 2em 2em;
+  padding-top: 4em;
+  padding-bottom: 2em;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -55,16 +40,13 @@
   max-width: 368px;
 }
 
-.logo-image {
-  width: 32px;
-  height: auto;
-}
-
 .footer-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  color: hsla(215.99999999999991, 12.20%, 83.92%, 1.00);
   font-weight: 400;
 }
 
@@ -80,9 +62,9 @@
 
   opacity: 0.9;
 
-  transition: color 300ms ease;
+  transition: color 500ms ease;
 
-  color: hsla(215.99999999999991, 12.20%, 83.92%, 1.00);
+  color: hsla(215.99999999999991, 0.00%, 100.00%, 1.00);
   font-size: 14px;
   line-height: 23px;
   font-weight: 500;
@@ -90,7 +72,7 @@
 }
 
 .footer-link:hover {
-  color: hsla(0, 0.00%, 100.00%, 1.00);
+  color: hsla(0, 5.05%, 71.21%, 1.00);
 }
 
 @media screen and (max-width: 767px) {
@@ -99,50 +81,17 @@
   }
 }
 
-.footer-social-block-3 {
-  display: flex;
-  margin-top: 12px;
-  margin-left: -12px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-social-block-3 {
-    margin-top: 20px;
-    margin-left: -20px;
-  }
-}
-
-.footer-social-link-3 {
-  margin-left: 12px;
-  padding-right: 10px;
-  padding-left: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-social-link-3 {
-    margin-left: 20px;
-  }
-}
-
-.social-media-icon {
-  border-radius: 15px;
-  background-color: transparent;
-  color: transparent;
-}
-
-.footer-content-3 {
+.footer-content {
   display: grid;
   grid-auto-columns: 1fr;
   grid-column-gap: 119px;
   grid-row-gap: 119px;
-  grid-template-columns: auto auto 1fr 1fr;
+  grid-template-columns: auto auto 1fr;
   grid-template-rows: auto;
 }
 
 @media screen and (max-width: 991px) {
-  .footer-content-3 {
+  .footer-content {
     margin-right: 35px;
     grid-column-gap: 29px;
     grid-row-gap: 29px;
@@ -150,7 +99,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-content-3 {
+  .footer-content {
     margin-top: 40px;
     justify-items: start;
     grid-column-gap: 84px;
@@ -160,7 +109,7 @@
 }
 
 @media screen and (max-width: 479px) {
-  .footer-content-3 {
+  .footer-content {
     justify-items: start;
     grid-column-gap: 34px;
     grid-row-gap: 34px;
@@ -168,81 +117,19 @@
   }
 }
 
-.title-small {
-  margin-bottom: 12px;
-
-  color: hsla(230.52631578947367, 0.00%, 100.00%, 1.00);
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 991px) {
-  .title-small {
-    text-transform: capitalize;
-  }
-}
-
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  margin-top: 70px;
-  margin-bottom: 15px;
-  background-color: hsla(212.00000000000006, 0.00%, 49.33%, 1.00);
-}
-
-@media screen and (max-width: 767px) {
-  .footer-divider {
-    margin-top: 60px;
-  }
-}
-
 .footer-copyright-center {
   padding-top: 1em;
   padding-bottom: 1em;
 
-  color: hsla(217.89473684210526, 8.84%, 57.84%, 1.00);
-  font-size: 14px;
+  color: hsla(217.89473684210526, 0.75%, 77.16%, 1.00);
+  font-size: 13px;
   line-height: 16px;
+  font-weight: 500;
   text-align: left;
 }
 
 @media screen and (max-width: 991px) {
   .footer-copyright-center {
     text-align: left;
-  }
-}
-
-#w-node-c7de51c5-f328-2366-cbde-757a659aad33-659aad1e {
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-}
-#w-node-c7de51c5-f328-2366-cbde-757a659aad3e-659aad1e {
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-}
-#w-node-c7de51c5-f328-2366-cbde-757a659aad49-659aad1e {
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-}
-#w-node-c7de51c5-f328-2366-cbde-757a659aad56-659aad1e {
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-}
-@media screen and (max-width: 991px) {
-  #w-node-c7de51c5-f328-2366-cbde-757a659aad49-659aad1e {
-    grid-column-start: span 1;
-    grid-column-end: span 1;
-    grid-row-start: span 1;
-    grid-row-end: span 1;
   }
 }

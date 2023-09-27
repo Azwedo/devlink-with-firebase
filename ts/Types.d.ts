@@ -7,6 +7,17 @@ type HeaderNavigationType = {
     href: string
 }
 
+type FooterNavigationItemType={
+    name: string,
+    href: string
+}
+
+type FooterNavigationType = {
+    title: string
+    items: FooterNavigationItemType[]
+}
+
+
 type AccountStateType = {
     User: User
     Loading: boolean

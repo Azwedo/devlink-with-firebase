@@ -7,7 +7,7 @@ import '@/ui/styles/devlink-with-firebase.css'
 import { type FC } from 'react'
 import { DevLinkProvider } from '@/ui/webflow'
 import { LinkRenderer } from "@/ui/components";
-import { Navigation } from "@/ui/views";
+import { Navigation, Footer } from "@/ui/views";
 import { Authenticator } from "@/controllers";
 import { FirebaseAuth } from "@/lib";
 import { useAccountState } from "@/data";
@@ -26,8 +26,8 @@ const Layout: FC<ChildrenProp> = (props) => {
       <body>
         <DevLinkProvider renderLink={LinkRenderer}>
           <Navigation />
-         
           {children}
+          <Footer />
         </DevLinkProvider>
       </body>
     </html>
