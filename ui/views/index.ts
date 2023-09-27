@@ -5,5 +5,5 @@ import Footer from "./Footer"
 export { 
     Loader,
     Navigation,
-    Footer
+    Footer,
 }

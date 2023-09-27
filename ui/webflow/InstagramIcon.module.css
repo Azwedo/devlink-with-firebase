@@ -1,0 +1,23 @@
+.footer-social-link {
+  margin-right: 12px;
+  margin-left: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
+  transition: opacity 500ms ease;
+}
+
+.footer-social-link:hover {
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-link {
+    margin-left: 20px;
+  }
+}
+
+.social-media-icon {
+  border-radius: 15px;
+  background-color: transparent;
+  color: transparent;
+}

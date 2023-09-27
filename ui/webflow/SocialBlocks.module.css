@@ -1,0 +1,23 @@
+.footer-social-block {
+  display: flex;
+  margin-top: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-block {
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+}
+
+.social-media {
+  transition: opacity 500ms ease;
+}
+
+.social-media:hover {
+  opacity: 0.85;
+}

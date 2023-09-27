@@ -2183,6 +2183,7 @@ textarea.w-select {
 
 :root {
   --buttonColor-28ed86d8: #7556ed;
+  --white-7a7a3126: hsla(0, 0.00%, 100.00%, 1.00);
 }
 
 .w-layout-blockcontainer {

@@ -46,12 +46,7 @@
 }
 
 .logo-image {
-  width: 32px;
-  height: auto;
-}
-
-.logo-image-2 {
-  display: none;
+  width: 180px;
   height: auto;
 }
 
@@ -90,19 +85,6 @@
 
 @media screen and (max-width: 991px) {
   .menu-bar-icon {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.menu-bar-icon-black {
-  display: none;
-  width: 24px;
-  height: 24px;
-}
-
-@media screen and (max-width: 991px) {
-  .menu-bar-icon-black {
     width: 24px;
     height: 24px;
   }
