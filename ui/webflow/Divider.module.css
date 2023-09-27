@@ -1,0 +1,13 @@
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  background-color: hsla(212.00000000000006, 0.00%, 49.33%, 1.00);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-divider {
+    margin-top: 60px;
+  }
+}

@@ -1,11 +1,11 @@
 import { FC, ReactElement } from "react"
+import { Footer } from "@/ui/webflow";
+import { FooterLists } from "../components/footer";
 
-const Footer: FC = (): ReactElement => {
+const FooterWebflow: FC = (): ReactElement => {
   return (
-    <div>
-      here the footer
-    </div>
+    <Footer lists={<FooterLists/>}/>
   )
 }
 
-export default Footer
+export default FooterWebflow

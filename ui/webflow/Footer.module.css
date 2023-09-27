@@ -55,16 +55,13 @@
   max-width: 368px;
 }
 
-.logo-image {
-  width: 32px;
-  height: auto;
-}
-
 .footer-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  color: hsla(215.99999999999991, 12.20%, 83.92%, 1.00);
   font-weight: 400;
 }
 
@@ -99,7 +96,7 @@
   }
 }
 
-.footer-social-block-3 {
+.footer-social-block {
   display: flex;
   margin-top: 12px;
   margin-left: -12px;
@@ -108,31 +105,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-social-block-3 {
+  .footer-social-block {
     margin-top: 20px;
     margin-left: -20px;
   }
 }
 
-.footer-social-link-3 {
-  margin-left: 12px;
-  padding-right: 10px;
-  padding-left: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-social-link-3 {
-    margin-left: 20px;
-  }
-}
-
-.social-media-icon {
-  border-radius: 15px;
-  background-color: transparent;
-  color: transparent;
-}
-
-.footer-content-3 {
+.footer-content {
   display: grid;
   grid-auto-columns: 1fr;
   grid-column-gap: 119px;
@@ -142,7 +121,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .footer-content-3 {
+  .footer-content {
     margin-right: 35px;
     grid-column-gap: 29px;
     grid-row-gap: 29px;
@@ -150,7 +129,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-content-3 {
+  .footer-content {
     margin-top: 40px;
     justify-items: start;
     grid-column-gap: 84px;
@@ -160,7 +139,7 @@
 }
 
 @media screen and (max-width: 479px) {
-  .footer-content-3 {
+  .footer-content {
     justify-items: start;
     grid-column-gap: 34px;
     grid-row-gap: 34px;
@@ -184,20 +163,6 @@
   }
 }
 
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  margin-top: 70px;
-  margin-bottom: 15px;
-  background-color: hsla(212.00000000000006, 0.00%, 49.33%, 1.00);
-}
-
-@media screen and (max-width: 767px) {
-  .footer-divider {
-    margin-top: 60px;
-  }
-}
-
 .footer-copyright-center {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -214,12 +179,6 @@
   }
 }
 
-#w-node-c7de51c5-f328-2366-cbde-757a659aad33-659aad1e {
-  grid-column-start: span 1;
-  grid-column-end: span 1;
-  grid-row-start: span 1;
-  grid-row-end: span 1;
-}
 #w-node-c7de51c5-f328-2366-cbde-757a659aad3e-659aad1e {
   grid-column-start: span 1;
   grid-column-end: span 1;
