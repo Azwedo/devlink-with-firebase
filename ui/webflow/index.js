@@ -11,6 +11,7 @@ export * from "./CompanyLogo";
 export * from "./Divider";
 export * from "./FacebookIcon";
 export * from "./Footer";
+export * from "./FullPageCenterLayout";
 export * from "./GithubIcon";
 export * from "./Header";
 export * from "./InstagramIcon";

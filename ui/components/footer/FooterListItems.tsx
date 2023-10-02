@@ -1,3 +1,4 @@
+import { FooterNavigationItemType } from "@/ts/Types";
 import { ListItem, } from "@/ui/webflow";
 import { ActiveSidebarLink } from "@/utils";
 import { usePathname } from "next/navigation";

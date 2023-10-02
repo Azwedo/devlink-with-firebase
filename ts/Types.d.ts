@@ -1,3 +1,5 @@
+import { Children, ReactElement } from 'react';
+
 type ChildrenProp = {
     children: React.ReactNode
 }
@@ -19,8 +21,12 @@ type FooterNavigationType = {
 
 
 type AccountStateType = {
-    User: User
+    User: User | false
     Loading: boolean
     StateSetAccount: (payload: any) => void
     StateRemoveAccount: () => void
+}
+
+type ChildrenProp = {
+    children: ReactElement
 }

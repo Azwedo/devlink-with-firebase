@@ -86,7 +86,7 @@ export function Header({
                 {user ?? (
                   <>
                     <_Builtin.Link
-                      className={_utils.cx(_styles, "mini-button-2")}
+                      className={_utils.cx(_styles, "mini-button-mobile")}
                       button={true}
                       options={{
                         href: "#",
@@ -132,7 +132,7 @@ export function Header({
             </_Builtin.Block>
           </_Builtin.NavbarMenu>
           <_Builtin.NavbarButton
-            className={_utils.cx(_styles, "menu-button-2")}
+            className={_utils.cx(_styles, "ham-menu")}
             tag="div"
           >
             <_Builtin.Icon

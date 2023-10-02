@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import { HeaderNavigation } from "@/data";
 import { ActiveSidebarLink } from "@/utils";
 import { NavItemLink, NavLinkItemActive } from "@/ui/webflow";
+import { HeaderNavigationType } from "@/ts/Types";
 
 const Links: FC = (): ReactElement => {
     const pathname = usePathname();

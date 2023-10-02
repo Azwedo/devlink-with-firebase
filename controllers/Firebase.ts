@@ -11,7 +11,7 @@ export const AuthWithGoogle = async (StateSetAccount: Function) => {
         const state = {
             name: user.displayName,
             email: user.email,
-            avatar: user.photoURL,
+            avatar: user.photoURL
         } as User
 
         StateSetAccount(state)
