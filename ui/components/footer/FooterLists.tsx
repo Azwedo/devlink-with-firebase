@@ -1,7 +1,8 @@
 import { FC, Fragment, ReactElement } from "react";
 import { FooterNavigation } from "@/data";
 import { List, } from "@/ui/webflow";
-import { FooterListItems } from ".";
+import { FooterListItems } from "@/ui/components/footer";
+import { FooterNavigationType } from "@/ts/Types";
 
 const FooterLists: FC = (): ReactElement => {
     return (

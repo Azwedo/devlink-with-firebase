@@ -1,36 +1,38 @@
-let authMode: null | 'login' | 'logout' = null;
+import { AccountStateType } from "@/ts/Types"
+
+let authMode: null | 'login' | 'logout' = null
 
 export const Authenticator = async (user: any, StateAccount: AccountStateType) => {
-   const { StateSetAccount, StateRemoveAccount } = StateAccount as AccountStateType;
+   const { StateSetAccount, StateRemoveAccount } = StateAccount as AccountStateType
 
    if(authMode === null){
       if(user) {
          const state = {
             name: user.displayName,
             email: user.email,
-            avatar: user.photoURL,
+            avatar: user.photoURL
          } as User
 
-         StateSetAccount(state);
+         StateSetAccount(state)
 
-         authMode = 'logout';
+         authMode = 'logout'
       } 
       
       else {
-         StateRemoveAccount();
-         authMode = 'login';
+         StateRemoveAccount()
+         authMode = 'login'
       }
    } 
    
    else {
       if(authMode === 'login' && user) {
-         StateSetAccount(user);
-         authMode = 'logout';
+         StateSetAccount(user)
+         authMode = 'logout'
       } 
       
       else if(authMode === 'logout' && !user) {
-         StateRemoveAccount();
-         authMode = 'login';
+         StateRemoveAccount()
+         authMode = 'login'
       }
    }
 }

@@ -1,6 +1,6 @@
-import { FC, Fragment, ReactElement } from "react";
-import { PageHeaderInfo, PageLayout } from "@/ui/webflow";
+import { FC,  Fragment,  ReactElement } from "react";
 import { Metadata } from "next";
+import { PageHeaderInfo, PageLayout } from "@/ui/webflow";
 
 const Contact: FC = (): ReactElement => {
   return (
