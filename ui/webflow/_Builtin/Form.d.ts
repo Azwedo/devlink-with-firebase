@@ -3,6 +3,7 @@ import { Props } from "./Basic";
 type FormState = "normal" | "success" | "error";
 type FormWrapperProps = Props<"div"> & {
   state?: FormState;
+  onSubmit?: (e: React.FormEvent<HTMLFormElement>) => void;
   children: React.ReactElement<
     typeof FormForm | typeof FormSuccessMessage | typeof FormErrorMessage
   >[];

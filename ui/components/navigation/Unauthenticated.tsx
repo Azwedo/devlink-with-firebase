@@ -1,4 +1,4 @@
-'use clinet'
+'use client'
 
 import { FC, ReactElement } from "react"
 import { Button } from "@/ui/webflow"

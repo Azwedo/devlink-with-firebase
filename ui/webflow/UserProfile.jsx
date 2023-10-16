@@ -26,7 +26,7 @@ export function UserProfile({
         loading="lazy"
         width="38"
         height="38"
-        alt="__wf_reserved_inherit"
+        alt=""
         src={url}
       />
     </_Component>

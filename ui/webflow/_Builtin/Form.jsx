@@ -1,5 +1,8 @@
 import React from "react";
 import { loadScript } from "../utils";
+function onKeyDownInputHandlers(e) {
+  e.stopPropagation();
+}
 export function FormWrapper({
   className = "",
   state: initialState = "normal",
@@ -18,6 +21,9 @@ export function FormWrapper({
       if (child.type === FormForm) {
         return React.cloneElement(child, {
           ...child.props,
+          style: {
+            display: ["normal", "error"].includes(state) ? "block" : "none",
+          },
           onSubmit: (e) => {
             try {
               e.preventDefault();
@@ -29,8 +35,8 @@ export function FormWrapper({
               }
               if (onSubmit) {
                 onSubmit(e);
-                setState("success");
               }
+              setState("success");
             } catch (err) {
               setState("error");
               throw err;
@@ -62,15 +68,17 @@ export function FormBlockLabel(props) {
 }
 export function FormTextInput({ className = "", ...props }) {
   return React.createElement("input", {
+    ...props,
     type: "text",
     className: className + " w-input",
-    ...props,
+    onKeyDown: onKeyDownInputHandlers,
   });
 }
 export function FormTextarea({ className = "", ...props }) {
   return React.createElement("textarea", {
-    className: className + " w-input",
     ...props,
+    className: className + " w-input",
+    onKeyDown: onKeyDownInputHandlers,
   });
 }
 export function FormInlineLabel({ className = "", ...props }) {
@@ -134,6 +142,7 @@ export function FormBooleanInput({
       setIsFocusedVisible(false);
       wasClicked.current = false;
     },
+    onKeyDown: onKeyDownInputHandlers,
   };
   if (inputType === "custom") {
     const pseudoModeClasses = `${isChecked ? ` ${CHECKED_CLASS}` : ""}${
@@ -209,9 +218,10 @@ export function FormFileUploadDefault({ className = "", ...props }) {
 export function FormFileUploadInput({ className = "", ...props }) {
   const { setFiles, setError, maxSize } = React.useContext(FileUploadContext);
   return React.createElement("input", {
-    type: "file",
-    className: className + " w-file-upload-input",
     ...props,
+    className: className + " w-file-upload-input",
+    type: "file",
+    onKeyDown: onKeyDownInputHandlers,
     onChange: (e) => {
       if (e.target.files) {
         if (e.target.files[0].size <= maxSize) {
@@ -346,10 +356,11 @@ export function FormFileUploadErrorMsg({ errors, className = "", ...props }) {
 }
 export function FormButton({ className = "", value, ...props }) {
   return React.createElement("input", {
+    ...props,
     type: "submit",
     value: value ?? "",
     className: className + " w-button",
-    ...props,
+    onKeyDown: onKeyDownInputHandlers,
   });
 }
 export function SearchForm(props) {
@@ -357,17 +368,19 @@ export function SearchForm(props) {
 }
 export function SearchInput({ className = "", ...props }) {
   return React.createElement("input", {
+    ...props,
     type: "text",
     className: className + " w-input",
-    ...props,
+    onKeyDown: onKeyDownInputHandlers,
   });
 }
 export function SearchButton({ value = "", className = "", ...props }) {
   return React.createElement("input", {
+    ...props,
     type: "submit",
     value,
     className: className + " w-button",
-    ...props,
+    onKeyDown: onKeyDownInputHandlers,
   });
 }
 export function FormSuccessMessage({ className = "", ...props }) {

@@ -1,11 +1,11 @@
 module.exports = {
-  host: "https://api.webflow.com",
+  host: process.env.NEXT_PUBLIC_WF_SITE_ENDPOINT,
   rootDir: "./ui/webflow",
-  siteId: "650ab7dceb96e3758196f4dc",
+  siteId: process.env.NEXT_PUBLIC_WF_SITE_ID,
   authToken: process.env.NEXT_PUBLIC_WF_AUTH_TOKEN,
   cssModules: true,
+  allowTelemetry: true,
   fileExtensions: {
     js: "jsx"
-  },
-  allowTelemetry: true
+  }
 }

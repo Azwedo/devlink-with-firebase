@@ -53,7 +53,7 @@ export function BigHeader({
               loading="lazy"
               width="400"
               height="Auto"
-              alt="__wf_reserved_inherit"
+              alt=""
               src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fee685cccf8c5ead9a7c_DevlinkFirebase.svg"
             />
           </_Builtin.Link>
@@ -87,7 +87,7 @@ export function BigHeader({
               loading="lazy"
               width="512"
               height="512"
-              alt="__wf_reserved_inherit"
+              alt="menu"
               src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/650c3e7003d77814d1cf11bc_menu-bar.png"
             />
           </_Builtin.Block>

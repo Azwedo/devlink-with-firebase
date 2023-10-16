@@ -21,7 +21,7 @@ export function CompanyLogo({
         loading="lazy"
         width="186"
         height="37"
-        alt="__wf_reserved_inherit"
+        alt=""
         src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fee685cccf8c5ead9a7c_DevlinkFirebase.svg"
       />
     </_Component>

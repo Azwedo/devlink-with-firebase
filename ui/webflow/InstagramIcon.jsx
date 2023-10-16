@@ -21,7 +21,7 @@ export function InstagramIcon({
         loading="lazy"
         width="27"
         height="auto"
-        alt="__wf_reserved_inherit"
+        alt=""
         src="https://uploads-ssl.webflow.com/650985fc39f1a60f558a8564/6512a77f4c84be0d0ffa4337_instagram.svg"
       />
     </_Component>

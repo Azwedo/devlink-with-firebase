@@ -30,7 +30,7 @@ export function SocialBlocks({
           loading="lazy"
           width="auto"
           height="auto"
-          alt="__wf_reserved_inherit"
+          alt=""
           src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fe518dcb738f20f26a03_Twitter%20Icon.svg"
         />
       </_Builtin.Link>
@@ -44,7 +44,7 @@ export function SocialBlocks({
           loading="lazy"
           width="auto"
           height="auto"
-          alt="__wf_reserved_inherit"
+          alt=""
           src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fe515e57af66bc21ecbc_Facebook%20Icon.svg"
         />
       </_Builtin.Link>
@@ -58,7 +58,7 @@ export function SocialBlocks({
           loading="lazy"
           width="auto"
           height="auto"
-          alt="__wf_reserved_inherit"
+          alt=""
           src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fe519ac981f2bd338f29_GitHub%20Icon.svg"
         />
       </_Builtin.Link>

@@ -39,7 +39,7 @@ export function Header({
               loading="lazy"
               width="400"
               height="Auto"
-              alt="__wf_reserved_inherit"
+              alt=""
               src="https://uploads-ssl.webflow.com/650ab7dceb96e3758196f4dc/6513fee685cccf8c5ead9a7c_DevlinkFirebase.svg"
             />
           </_Builtin.Link>
@@ -112,7 +112,7 @@ export function Header({
                         loading="lazy"
                         width="38"
                         height="38"
-                        alt="__wf_reserved_inherit"
+                        alt=""
                         src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.fd6bdcfeb6.svg"
                       />
                     </_Builtin.Link>

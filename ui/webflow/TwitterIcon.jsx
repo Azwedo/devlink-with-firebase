@@ -21,7 +21,7 @@ export function TwitterIcon({
         loading="lazy"
         width="27"
         height="auto"
-        alt="__wf_reserved_inherit"
+        alt=""
         src="https://uploads-ssl.webflow.com/650985fc39f1a60f558a8564/6512a7e08b1468c2e0750e87_instagram.svg"
       />
     </_Component>

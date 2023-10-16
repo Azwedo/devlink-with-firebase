@@ -18,9 +18,9 @@ export function FacebookIcon({
       <_Builtin.Image
         className={_utils.cx(_styles, "social-media-icon")}
         loading="lazy"
-        width={27}
+        width="27"
         height="auto"
-        alt="__wf_reserved_inherit"
+        alt=""
         src="https://uploads-ssl.webflow.com/650985fc39f1a60f558a8564/6512a50f5cff822a63654a61_facebook.svg"
       />
     </_Component>

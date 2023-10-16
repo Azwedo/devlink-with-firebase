@@ -4,4 +4,4 @@ type IXEngine = {
   init: (data: IXData) => void;
 };
 
-export const createIX2Engine: () => IXEngine;
+export declare const createIX2Engine: () => IXEngine;
