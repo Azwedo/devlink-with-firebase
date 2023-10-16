@@ -1,7 +1,7 @@
-import { FirebaseConfig } from "@/data";
-import { initializeApp, FirebaseApp } from "firebase/app";
-import { getAuth, Auth } from "firebase/auth";
-import { getStorage } from "firebase/storage";
+import { FirebaseConfig } from "@/data"
+import { getAuth, Auth } from "firebase/auth"
+import { getStorage } from "firebase/storage"
+import { initializeApp, FirebaseApp } from "firebase/app"
 
 let Firebase: FirebaseApp;
 let FirebaseStorage: ReturnType<typeof getStorage>;

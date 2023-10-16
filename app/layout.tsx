@@ -8,7 +8,7 @@ import { type FC } from 'react'
 import { DevLinkProvider } from '@/ui/webflow'
 import { LinkRenderer } from "@/ui/components";
 import { Authenticator } from "@/controllers";
-import { FirebaseAuth } from "@/lib";
+import { FirebaseAuth } from "@/lib/Firebase";
 import { useAccountState } from "@/data";
 import { AccountStateType, ChildrenProp } from "@/ts/Types";
 import { Layout as AuthHandler } from "@/ui/layouts";
@@ -21,6 +21,7 @@ const Layout: FC<ChildrenProp> = (props) => {
     user,
     StateAccount
   ));
+
 
   return (
     <html>

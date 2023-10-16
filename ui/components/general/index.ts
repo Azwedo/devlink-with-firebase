@@ -1,5 +1,2 @@
-import LinkRenderer from "./LinkRenderer"
-
-export { 
-    LinkRenderer,
-}
+import LinkRenderer from "./LinkRenderer";
+export { LinkRenderer };

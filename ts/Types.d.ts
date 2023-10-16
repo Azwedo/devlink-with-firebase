@@ -19,7 +19,6 @@ type FooterNavigationType = {
     items: FooterNavigationItemType[]
 }
 
-
 type AccountStateType = {
     User: User | false
     Loading: boolean
