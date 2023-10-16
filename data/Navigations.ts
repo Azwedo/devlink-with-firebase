@@ -1,3 +1,5 @@
+import { FooterNavigationType, HeaderNavigationType } from "@/ts/Types"
+
 export const HeaderNavigation: HeaderNavigationType[] = [
     {
         name: "Dashboard",
